@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Aula10';
+  numero = 2;
+  autenticado : boolean = false;
+  estiloBotao = "btn btn-primary";
 }

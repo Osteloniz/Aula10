@@ -1,0 +1,61 @@
+<div class="container">
+  <h1 style="text-align: center">Calular Media</h1>
+  <div class="row">
+    <div class="col-md-3">
+      <label class="form-label">AC1</label>
+      <input
+        type="number"
+        name="ac1"
+        [(ngModel)]="ac1"
+        class="form-control"
+      />
+    </div>
+    <div class="col-md-3">
+      <label class="form-label">AC2</label>
+      <input
+        type="number"
+        name="ac2"
+        [(ngModel)]="ac2"
+        class="form-control"
+      />
+    </div>
+    <div class="col-md-3">
+      <label class="form-label">AG</label>
+      <input
+        type="number"
+        name="ag"
+        [(ngModel)]="ag"
+        class="form-control"
+      />
+    </div>
+    <div class="col-md-3">
+      <label class="form-label">AF</label>
+      <input
+        type="number"
+        name="af"
+        [(ngModel)]="af"
+        class="form-control"
+      />
+    </div>
+  </div>
+  <div class="col-md-4">
+  <button (click)="media()" class="btn btn-primary">CALCULAR</button>
+  </div>
+  
+  <div class="col-md-4">
+    <input
+    type="number"
+    placeholder="Média"
+    name="media"
+    [(ngModel)]="med"
+    disabled
+  />
+  </div>
+  <input
+    type="string"
+    placeholder="Situação"
+    name="situacao"
+    [(ngModel)]="sit"
+    disabled
+  />
+</div>

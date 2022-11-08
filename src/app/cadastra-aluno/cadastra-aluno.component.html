@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form ngNativeValidate>
+            <div class="col-md-6">
+                <label class="form-label">RA</label>
+                <input required type="text" name="nome" class="form-control" name="ra"
+                [(ngModel)]="ra"/>
+            </div>
+    
+            <div class="col-md-6">
+                <label class="form-label">Nome</label>
+                <input required type="text" name="idade" class="form-control" name="nome"
+                [(ngModel)]="nome"/>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">E-mail</label>
+                <input required type="email" name="email" class="form-control" name="email"
+                [(ngModel)]="email"/>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Celular</label>
+                <input required type="number" name="celular" class="form-control" name="celular"
+                [(ngModel)]="celular"/>
+            </div>
+
+            <div class="col-md-6">
+                <button type="submit" (click)="enviarFormulario()" class="btn btn-primary">Enviar</button>
+            </div>
+            
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- <p>Número 1: {{num1}} (Interpolação)</p> -->
+
+<!-- Para trazer um dado do back-end para o front-end, usa-se [args]="nome da variavel" -->
+
+<!-- Caso tenha o "ng" dentro do [], significa que estou manipulando a propria class, isso é nativo do Angular, sempre com o "C" maiusculo -->
+<!-- <button type="button" [ngClass]="estiloBotao" [disabled]="inativo" (click)="ngOnInit()">Teste</button> -->
+
+<!-- Para levar um dado do front-end para o back-end, usa-se (args)
+
+<button type="button" [ngClass]="estiloBotao" (click)="mudarValorNum1()">Teste</button> -->

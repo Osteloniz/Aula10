@@ -1,0 +1,11 @@
+<div class="container ">
+ 
+    <input type="number" placeholder="Num1" name="num1" [(ngModel)]="num1" />
+    <input type="number" placeholder="Num2" name="num2" [(ngModel)]="num2" /> <br>
+    <button (click)="somar()" class="btn btn-primary">+</button>
+    <button (click)="sub()" class="btn btn-primary">-</button>
+    <button (click)="mult()" class="btn btn-primary">x</button>
+    <button (click)="div()" class="btn btn-primary">/</button> <br>
+    <input type="number"placeholder="Resultado"name="resultado"[(ngModel)]="resultado" disabled/>
+ 
+</div>
