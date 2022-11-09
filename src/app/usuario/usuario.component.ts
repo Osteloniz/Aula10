@@ -18,4 +18,9 @@ export class UsuarioComponent implements OnInit {
       this.usuarios = data;
     })//se der erro colocar apos a chaves },erro.
   }
+  excluir(id){
+    this.usuarioService.excluirUsuario(id).subscribe(()=>{
+      this.buscarUsuarios();
+    });
+  }
 }
